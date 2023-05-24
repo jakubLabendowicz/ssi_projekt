@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background-color:#f5f7ff;
+        margin:0;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .bar{
+        position:fixed;
+        top:0; 
+        left:0; 
+        right:0; 
+        height:64px; 
+        background-color: white; 
+        box-shadow: 0px 5px 21px -5px #cdd1e1;
+      }
+      .bar_inner{
+        height: 48px;
+        margin: 8px;
+        width: calc(100% - 16px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: bold;
+      }
+      .container{
+        background-color:#f5f7ff; 
+        margin-top:64px; 
+        width: calc(100vw - 200px); 
+        padding: 100px;
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap:50px;
+      }
+      .section{
+        width:100%; 
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap:50px;
+      }
+      .section_title{
+        font-size: 48px;
+      }
+      .sub_section{
+        width:100%; 
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap:50px;
+      }
+      .sub_section_title{
+        font-size: 24px;
+      }
+      .shapes{
+        width:100%; 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        gap:50px;
+      }
+      .shape{
+        width:30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <div class="bar_inner">
+        Systemy sztucznej inteligencji - projekt
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="section_title">Najwyższa cena</div>
+        <div class="sub_section">
+          <div class="sub_section_title">lstm</div>
+          <div class="shapes">
+            <img class="shape" src="./static/images/lstm_najwyższa cena_mse_shape.png">
+            <img class="shape" src="./static/images/lstm_najwyższa cena_comparison_shape.png">
+            <img class="shape" src="./static/images/lstm_najwyższa cena_deviation_shape.png">
+          </div>
+        </div>
+        <div class="sub_section">
+          <div class="sub_section_title">gru</div>
+          <div class="shapes">
+            <img class="shape" src="./static/images/gru_najwyższa cena_mse_shape.png">
+            <img class="shape" src="./static/images/gru_najwyższa cena_comparison_shape.png">
+            <img class="shape" src="./static/images/gru_najwyższa cena_deviation_shape.png">
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section_title">Cena</div>
+        <div class="sub_section">
+          <div class="sub_section_title">lstm</div>
+          <div class="shapes">
+            <img class="shape" src="./static/images/lstm_cena_mse_shape.png">
+            <img class="shape" src="./static/images/lstm_cena_comparison_shape.png">
+            <img class="shape" src="./static/images/lstm_cena_deviation_shape.png">
+          </div>
+        </div>
+        <div class="sub_section">
+          <div class="sub_section_title">gru</div>
+          <div class="shapes">
+            <img class="shape" src="./static/images/gru_cena_mse_shape.png">
+            <img class="shape" src="./static/images/gru_cena_comparison_shape.png">
+            <img class="shape" src="./static/images/gru_cena_deviation_shape.png">
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section_title">Wolumen cen</div>
+        <div class="sub_section">
+          <div class="sub_section_title">lstm</div>
+          <div class="shapes">
+            <img class="shape" src="./static/images/lstm_volumen cen_mse_shape.png">
+            <img class="shape" src="./static/images/lstm_volumen cen_comparison_shape.png">
+            <img class="shape" src="./static/images/lstm_volumen cen_deviation_shape.png">
+          </div>
+        </div>
+        <div class="sub_section">
+          <div class="sub_section_title">gru</div>
+          <div class="shapes">
+            <img class="shape" src="./static/images/gru_volumen cen_mse_shape.png">
+            <img class="shape" src="./static/images/gru_volumen cen_comparison_shape.png">
+            <img class="shape" src="./static/images/gru_volumen cen_deviation_shape.png">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
